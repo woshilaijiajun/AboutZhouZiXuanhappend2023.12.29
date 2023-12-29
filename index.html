@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>检查中</title>
+    <script>
+        function checkDevice() {
+            let userAgent = navigator.userAgent;
+            let isMobile = userAgent.match(/(iPhone|iPod|Android|BlackBerry|IEMobile)/);
+            if (isMobile) {
+                window.location.href = "M.html";
+            } else {
+                window.location.href = "pc.html";
+            }
+        }
+    </script>
+</head>
+<body onload="checkDevice()">
+    <!-- 页面内容 -->
+</body>
+</html>
